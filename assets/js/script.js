@@ -8,12 +8,12 @@ $(document).ready(function(){
         localStorage.setItem(time, value);
     });
 
-    // looks at time block and gives a BG colour based on past, present or future
-    function pastOrFuture() {
+    // looks at time block and gives a BG colour based on past, present or future  
+    (function pastOrFuture() {
         var currentTime = moment().hour();
         $(".time-block").each(function(){
             var blockTime = parseInt($(this).attr("id").split("-")[1]) //parseInt looks at the number and parses it into an integer
         });
-    }
+    })();
 
 });
