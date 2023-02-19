@@ -14,8 +14,8 @@ $(document).ready(function(){
         var value = $(this).siblings(".description").val(); // targets siblling with class of description and get's its value
         localStorage.setItem(time, value); // saves to local storage
 
-        // display notification to user
-
+        // FUTURE CONSIDERATION: write if statement to display notification to user after they succesfully save text to local storage
+        // but display "nothing saved" if field was empty or unchanged
 
     });
 
@@ -44,9 +44,4 @@ $(document).ready(function(){
     })();
 
 });
-
-
-// Allow a user to enter an event when they click a timeblock.
-
-// Save the event in local storage when the save button is clicked in that timeblock.
 
