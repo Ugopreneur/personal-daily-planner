@@ -9,17 +9,20 @@ $(document).ready(function () {
   $("#currentDay").text(`${currentDay}, ${currentDate}`);
 
   // When the SAVE button is clicked, grab the related time and value then save to local storage
-  $(".saveBtn").on("click", function () {
+  $(".saveBtn").on("click", function () { 
+
     var time = $(this).parent().attr("id"); // targets parent's id
     var value = $(this).siblings(".description").val(); // targets siblling with class of description and get's its value
     localStorage.setItem(time, value); // saves to local storage
 
     // FUTURE CONSIDERATION: write if statement to display notification to user after they succesfully save text to local storage
     // but display "nothing saved" if field was empty or unchanged
+
   });
 
   // looks at time block and gives a BG colour based on past, present or future
   (function pastPresentOrFuture() {
+
     var currentTime = moment().hour();
 
     $(".time-block").each(function () {
@@ -39,6 +42,7 @@ $(document).ready(function () {
         .val(localStorage.getItem($(this).attr("id")));
 
         // FUTURE CONSIDERATION: Move the code getting stuff from localstorage from inside the pastPresentOrFuture function
+    
     });
   })();
 
