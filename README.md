@@ -14,12 +14,12 @@ The use can type anything they wish into each block and click the save icon next
 
 #### Blank Daily planner
 <p align="center">
-  <img src="./assets/images/readme-images/blank" width="700" title="blank planner" alt="black planner screen">
+  <img src="./assets/images/readme-images/blank.png" width="700" title="blank planner" alt="black planner screen">
 </p>
 
 #### Planner with time bloicks filled in
 <p align="center">
-  <img src="./assets/images/readme-images/filled" width="700" title="filled planner" alt="filled planner screen">
+  <img src="./assets/images/readme-images/filled.png" width="700" title="filled planner" alt="filled planner screen">
 </p>
 
 ## Built With
