@@ -22,12 +22,6 @@ The use can type anything they wish into each block and click the save icon next
   <img src="./assets/images/readme-images/filled.png" width="700" title="filled planner" alt="filled planner screen">
 </p>
 
-## Built With
-
-- Basic HTML to load the web page
-- CSS for styling
-- Intermediate-level Javascript for all logic: Arrays, Variables, methods, For Loops, nested for loops, Functions, nested functions, prompts, if/else statements, Manipulating HTML DOM, local storage etc.
-
 ## Contact
 
 - Email: ugnwokoro@yahoo.com
