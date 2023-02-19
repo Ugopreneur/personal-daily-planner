@@ -6,13 +6,17 @@ $(document).ready(function(){
     var currentDay = moment().format('dddd'); 
 
     //display the current date and time at the top of the calendar
-    $("#currentDay").text(currentDay +", "+ currentDate); 
+    $("#currentDay").text(`${currentDay}, ${currentDate}`); 
     
     // When the SAVE button is clicked, grab the related time and value then save to local storage
     $(".saveBtn").on("click", function(){
         var time = $(this).parent().attr("id"); // targets parent's id
         var value = $(this).siblings(".description").val(); // targets siblling with class of description and get's its value
-        localStorage.setItem(time, value); // save's both to local storage
+        localStorage.setItem(time, value); // saves to local storage
+
+        // display notification to user
+
+
     });
 
     // looks at time block and gives a BG colour based on past, present or future  
@@ -32,15 +36,12 @@ $(document).ready(function(){
                 $(this).addClass("future")
              }
             
-            //  console.log()
-             $(this).children("textarea").val(localStorage.getItem($(this).attr("id")))
+            // Ensure the text stays on screen even when user refreshes
+            $(this).children("textarea").val(localStorage.getItem($(this).attr("id")))
 
 
         });
     })();
-
-    // Ensure the text stays on screen even when user refreshes
-    localStorage.getItem
 
 });
 
