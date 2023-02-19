@@ -1,12 +1,12 @@
 // When this document loads in the browser, run this function
 $(document).ready(function(){
 
-    //Get the current time from moment.js
-    var timeTEst = moment().format('MMMM Do YYYY');
-    var test2 = moment().format('dddd'); 
+    //Get the current date and day from moment.js
+    var currentDate = moment().format('MMMM Do YYYY');
+    var currentDay = moment().format('dddd'); 
 
     //display the current date and time at the top of the calendar
-    $("#currentDay").text(test2 + ", " + timeTEst); // use back tick stuff
+    $("#currentDay").text(currentDay +", "+ currentDate); 
     
     // When the SAVE button is clicked, grab the related time and value then save to local storage
     $(".saveBtn").on("click", function(){
